@@ -32,6 +32,8 @@ function Sidebar() {
         }
     }
 
+
+    console.log(user);
     return (
         <div className="sidebar">
             <div className="sidebar__top">
@@ -62,7 +64,7 @@ function Sidebar() {
             <div className="sidebar__profile">
                 <MdPerson className="sidebar__profileIcon" onClick={()=>{auth.signOut()}}/>
                 <div className="sidebar__profileInfo">
-                    <h3>{user.displayName}</h3>
+                    <h3>{user.email}</h3>
                     <p>#{user.uid.substring(0,5)}</p>
                 </div>
             </div>

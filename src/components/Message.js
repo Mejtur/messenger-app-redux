@@ -7,7 +7,7 @@ function Message({timestamp,user,message}) {
         <div className="message">
             <MdPerson className="sidebar__profileIcon" />
             <div className="message__info">
-                <h4>{user.displayName}
+                <h4>{user.email}
                  <span className="message__timestamp">{new Date(timestamp?.toDate()).toUTCString()}</span>
                 </h4>
                 <p>{message}</p>
